@@ -30,3 +30,9 @@ C# 문법의 기본적인 내용을 숙지하고 있다는 전제 하에 진행�
 | 6 | 상태 패턴과 FSM |
 | 7 | 명령 패턴 |
 | 8 | 관찰자 패턴 |
+
+# 참고문헌
+
+[Refactoring Guru - 디자인 패턴들](https://refactoring.guru/ko/design-patterns)
+
+[Level_up_your_code_with_Game_Programming_Pattern-3-ko_kr.pdf](https://prod-files-secure.s3.us-west-2.amazonaws.com/fd6b1786-b871-4b10-a1b8-a7ded10c9eb0/3e048ebb-2539-48ee-b474-206592496c4a/Level_up_your_code_with_Game_Programming_Pattern-3-ko_kr.pdf)
