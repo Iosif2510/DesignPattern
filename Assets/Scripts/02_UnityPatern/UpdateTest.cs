@@ -10,6 +10,7 @@ public class UpdateTest : MonoBehaviour
     private void Update()
     {
         Debug.Log($"Update: {Time.deltaTime}s");
+        Debug.Log($"Fixed Delta Time: {Time.fixedDeltaTime}s");
     }
 
     private void LateUpdate()
