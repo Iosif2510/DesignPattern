@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Snowman : MonoBehaviour
 {
+    [SerializeField] private float speed = 2.0f;
+    
     // Update is called once per frame
     private void Update()
     {
-        transform.Translate(Vector3.forward * Time.deltaTime);
+        transform.Translate(speed * Time.deltaTime * Vector3.forward);
     }
 }
