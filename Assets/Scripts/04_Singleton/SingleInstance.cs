@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class GenericSingleton<T> : MonoBehaviour where T : GenericSingleton<T>
+public class SingleInstance<T> : MonoBehaviour where T : SingleInstance<T>
 {
     private static T instance = null;
 
-    public static T Instance
+    public T Instance
     {
         get
         {
@@ -16,17 +15,18 @@ public class GenericSingleton<T> : MonoBehaviour where T : GenericSingleton<T>
         }
     }
 
+
     private static void InitSingleton()
     {
         if (instance != null) return;
         instance = FindObjectOfType<T>();
         if (instance == null)
         {
-            var managerObject = GameObject.Find("@Managers");
+            var managerObject = GameObject.Find("SingleInstance");
             if (managerObject == null)
             {
                 managerObject = new GameObject();
-                managerObject.name = "@Managers";
+                managerObject.name = "SingleInstance";
             }
             instance = managerObject.AddComponent<T>();
             DontDestroyOnLoad(managerObject);
