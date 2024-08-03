@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc317b58d63ce4d1fa737f6b873478d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 0
+  singleComponent: {fileID: 0}
 --- !u!4 &37023005
 Transform:
   m_ObjectHideFlags: 0
@@ -177,6 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 290185192}
   - component: {fileID: 290185193}
+  - component: {fileID: 290185194}
   m_Layer: 0
   m_Name: '@Managers'
   m_TagString: Untagged
@@ -211,6 +214,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6119e1c15b534464da1b1a450c7940ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &290185194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290185190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b07daedf2664679bd714eb73007ca7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testValue: 0
 --- !u!1 &315012641
 GameObject:
   m_ObjectHideFlags: 0
